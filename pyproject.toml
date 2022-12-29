@@ -1,5 +1,5 @@
 # Project configuration
-title = "MNIST Demo"
+title = "Anomaly Detection"
 
 [owner]
 name = "FELT Labs"

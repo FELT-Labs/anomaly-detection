@@ -1,9 +1,12 @@
 """Algorithm file used in the Ocean protocol algorithm."""
 import matplotlib.pyplot as plt
 import numpy as np
+import seaborn as sns
 from feltlabs.config import TrainingConfig
 from feltlabs.core.data import load_data
 from feltlabs.model import load_model
+
+sns.set_theme()
 
 
 def main():
@@ -20,9 +23,12 @@ def main():
     threshold = 2
     anomaly = abs((y - values["Mean"]) / values["Std"]) > threshold
 
-    plt.figure(figsize=(10, 8))
+    plt.figure(figsize=(10, 7))
     plt.plot(anomaly, label=f"Total anomalies: {sum(anomaly)}")
-    for i, x in enumerate(np.nonzero(anomaly)[0]):
+
+    nonzero = np.nonzero(anomaly)[0]
+    plt.scatter(nonzero, np.ones_like(nonzero), c="r")
+    for i, x in enumerate(nonzero):
         plt.annotate(
             f"{x}",
             (x, 1),
@@ -37,8 +43,6 @@ def main():
     plt.legend(title="Status", loc=6)
     plt.title("Anomaly status for each period")
     plt.savefig(config.output_folder / "result.jpg")
-
-    print(values["Mean"])
 
 
 if __name__ == "__main__":
