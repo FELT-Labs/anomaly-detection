@@ -1,0 +1,3 @@
+AUTHOR NAME: Oscar Rodríguuz
+SOURCE: https://www.kaggle.com/datasets/osroru/copper-wire-production-line-dataset
+LICENSE: CC BY-SA 4.0
