@@ -21,25 +21,25 @@ def main():
     print(values)
 
     threshold = 2
-    anomaly = abs((y - values["Mean"]) / values["Std"]) > threshold
+    anomaly = abs((y - values["Mean"]) / values["Std"])
 
     plt.figure(figsize=(10, 7))
     plt.plot(anomaly, label=f"Total anomalies: {sum(anomaly)}")
 
     nonzero = np.nonzero(anomaly)[0]
-    plt.scatter(nonzero, np.ones_like(nonzero), c="r")
-    for i, x in enumerate(nonzero):
-        plt.annotate(
-            f"{x}",
-            (x, 1),
-            textcoords="offset points",
-            xytext=(0, 2 + 10 * (i % 2)),
-            ha="center",
-        )
+    # plt.scatter(nonzero, np.ones_like(nonzero), c="r")
+    # for i, x in enumerate(nonzero):
+    #     plt.annotate(
+    #         f"{x}",
+    #         (x, 1),
+    #         textcoords="offset points",
+    #         xytext=(0, 2 + 10 * (i % 2)),
+    #         ha="center",
+    #     )
 
     plt.xlabel("Production Period")
     plt.ylabel("Anomaly")
-    plt.yticks([0, 1], ["No", "Yes"])
+    # plt.yticks([0, 1], ["No", "Yes"])
     plt.legend(title="Status", loc=6)
     plt.title("Anomaly status for each period")
     plt.savefig(config.output_folder / "result.jpg")
