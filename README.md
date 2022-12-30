@@ -5,6 +5,10 @@
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
+[**Anomaly Detection on YouTube:**](http://www.youtube.com/watch?v=IKwxdvDpu6A)  
+[![Demo video on YouTube](http://img.youtube.com/vi/IKwxdvDpu6A/hqdefault.jpg)](http://www.youtube.com/watch?v=IKwxdvDpu6A)
+
+
 ## Introduction
 Anomaly detection is common problem found in many different industries. This repository demonstrates usage of FELT for anomaly detection on distributed data. You can image 3 factories each producing same product (cables in our case). Using FELT and Ocean Protocol we can calculate statistics across all datasets without revealing data itself. After that we can use those statistics for detecting anomalies in each factory.
 
