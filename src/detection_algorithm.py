@@ -27,12 +27,12 @@ def main():
 
     nonzero = np.nonzero(anomaly)[0]
     plt.scatter(nonzero, np.ones_like(nonzero), c="r")
-    for i, x in enumerate(nonzero):
+    for x in nonzero:
         plt.annotate(
             f"{x}",
             (x, 1),
             textcoords="offset points",
-            xytext=(0, 2 + 10 * (i % 2)),
+            xytext=(0, 5),
             ha="center",
         )
 
