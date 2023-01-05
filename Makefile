@@ -37,7 +37,7 @@ $(VENV_NAME)/bin/activate: requirements.txt
 	touch $(VENV_NAME)/bin/activate
 
 clean:
-	find . -name '*.pyc' -exec rm --force {} +
+	find . -name '*.pyc' -exec rm -f {} +
 	rm -rf $(VENV_NAME) *.eggs *.egg-info dist build docs/_build .cache
 
 run:
