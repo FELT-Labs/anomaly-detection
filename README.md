@@ -1,7 +1,7 @@
 # Anomaly Detection
 **Anomaly detection demo for SBIC 2022**
 
-<a target="_blank" href="https://colab.research.google.com/github/https://colab.research.google.com/github/FELT-Labs/anomaly-detection/blob/main/main.ipynb">
+<a target="_blank" href="https://colab.research.google.com/github/FELT-Labs/anomaly-detection/blob/main/main.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
@@ -92,6 +92,6 @@ Once you have requirements installed and jupyter running. You can open [main.ipy
 
 You can also open the notebook in Google Colab:
 
-<a target="_blank" href="https://colab.research.google.com/github/https://colab.research.google.com/github/FELT-Labs/anomaly-detection/blob/main/main.ipynb">
+<a target="_blank" href="https://colab.research.google.com/github/FELT-Labs/anomaly-detection/blob/main/main.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
